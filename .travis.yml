@@ -2,4 +2,8 @@ language: node_js
 node_js:
   - "4.0"
   - "0.12"
-install: npm install & bower install
+install:
+  - npm install
+
+before_script:
+  - bower install
