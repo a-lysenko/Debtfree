@@ -1,0 +1,29 @@
+{
+  "name": "gulp-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-async-func-runner": "^0.1.10",
+    "gulp-todo": "^4.0.0",
+    "karma": "^0.13.15",
+    "karma-coverage": "^0.5.3",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.19",
+    "plato": "^1.5.0",
+    "reporter": "file:..\\reporter",
+    "request": "^2.67.0",
+    "through2": "^2.0.0",
+    "vinyl-fs": "^2.2.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "gulp-analyzer@1.0.0",
+  "_shasum": "a0f00464b492deb0a72d901f3993624b5dee3542",
+  "_from": "tools\\gulp-analyzer",
+  "_resolved": "file:tools\\gulp-analyzer"
+}
