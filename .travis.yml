@@ -8,4 +8,4 @@ install:
 before_script:
   - bower install
 script:
-  - npm test-single-run
+  - npm run test-single-run
