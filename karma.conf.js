@@ -32,9 +32,9 @@ module.exports = function (config) {
 
         reporters: ['dots', 'coverage'],
 
+        // 'karma-chrome-launcher',
+        // 'karma-firefox-launcher',
         plugins: [
-            'karma-chrome-launcher',
-            'karma-firefox-launcher',
             'karma-jasmine',
             'karma-coverage'
         ],
