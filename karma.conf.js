@@ -28,13 +28,13 @@ module.exports = function (config) {
 
         frameworks: ['jasmine'],
 
-        // browsers: ['Chrome'],
+        browsers: ['Chrome'],
 
         reporters: ['dots', 'coverage'],
 
-        // 'karma-chrome-launcher',
         // 'karma-firefox-launcher',
         plugins: [
+            'karma-chrome-launcher',
             'karma-jasmine',
             'karma-coverage'
         ],
