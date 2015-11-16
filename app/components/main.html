@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Let you flowers be poured in time!</h1>
+
+    <div ng-controller="ModalDialogController" class="panel panel-default">
+        <button type="button" class="btn btn-primary" ng-click="open()"><span class="glyphicon glyphicon-plus"></span><span> Add flower</span></button>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th></th>
+            <th>Flower</th>
+            <th>Interval (days)</th>
+            <th>Date of last watering</th>
+            <th>Date of next watering</th>
+            <th></th>
+        </tr>
+        <tr class="lead" ng-repeat="item in pourFlowerData" ng-class="{'bg-danger': item.dateOfNextWatering < currentDate}">
+            <td><button type="button" class="btn btn-danger" title="Remove item" ng-click="onRemoveFlower(item)"><span class="glyphicon glyphicon-remove"></span></button></td>
+            <td>{{item.name}}</td>
+            <td>{{item.interval}}</td>
+            <td>{{item.dateOfLastWatering | date:'dd / MMM / yyyy'}}</td>
+            <td>{{item.dateOfNextWatering | date:'dd / MMM / yyyy'}}</td>
+            <td><button type="button" class="btn btn-primary" ng-click="onPourFlower(item)"><span class="glyphicon glyphicon-tint"></span> Pour on</button></td>
+        </tr>
+    </table>
+</div>

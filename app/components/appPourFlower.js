@@ -1,0 +1,1 @@
+angular.module('appPourFlower', ['ngRoute', 'common', 'dateManipulation', 'modalDialog']);

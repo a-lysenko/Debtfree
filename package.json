@@ -1,19 +1,42 @@
 {
-  "name": "Debtfree",
-  "version": "1.0.0",
-  "description": "this app is aimed to control and decrease a tech debt",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.0",
+  "private": true,
+  "name": "pour-flower",
+  "description": "Educatioanl project as Module 3 HW 1 to mentoring program at EPAM",
   "repository": {
     "type": "git",
-    "url": "https://github.com/a-lysenko/Debtfree.git"
+    "url": ""
   },
-  "author": "Resolved group",
-  "license": "ISC",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "http-server": "^0.8.0",
+    "karma": "^0.13.6",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-coverage": "^0.4.2",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.1.5",
+    "shelljs": "^0.2.6",
+    "tmp": "0.0.23"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server ./app -a 0.0.0.0 -p 7000",
+    "test": "node node_modules/karma/bin/karma start karma.conf.js",
+    "test-single-run": "node node_modules/karma/bin/karma start karma.conf.js  --single-run",
+    "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + cat('bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
+  },
   "bugs": {
-    "url": "https://github.com/a-lysenko/Debtfree/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/a-lysenko/Debtfree"
+  "homepage": "",
+  "main": "index.js",
+  "directories": {
+    "test": "app"
+  },
+  "dependencies": {
+    "bower": "^1.4.1"
+  },
+  "author": "Aleksey Lysenko"
 }

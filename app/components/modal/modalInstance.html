@@ -1,0 +1,28 @@
+<div class="modal-header">
+    <h3 class="modal-title">Input information about a flower.</h3>
+</div>
+<div class="modal-body form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Flower:</label>
+        <div class="col-sm-10">
+            <input ng-model="flower.name" type="text" class="form-control" id="name" name="name" placeholder="input name of flower (don't dublicate already registered)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Interval:</label>
+        <div class="col-sm-10">
+            <input ng-model="flower.interval"  type="number" class="form-control" id="interval" name="interval" placeholder="input interval (in days) of watering for the flower" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="dateOfLastWatering">Date of the last watering:</label>
+        <div class="col-sm-10">
+            <input ng-model="flower.dateOfLastWatering" type="date" class="form-control" id="dateOfLastWatering" name="dateOfLastWatering" placeholder="input date of the last watering" />
+        </div>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

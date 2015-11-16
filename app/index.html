@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Pour Flower</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+
+    <!-- ANGULAR -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="components/appPourFlower.js"></script>
+    <script src="components/appRoutes.js"></script>
+
+    <script src="components/common/common.js"></script>
+    <script src="components/common/LocalStorageService.js"></script>
+    <script src="components/dateManipulation/dateManipulation.js"></script>
+    <script src="components/dateManipulation/dateManipulationService.js"></script>
+
+    <script src="components/PourActionsService.js"></script>
+
+    <script src="components/modal/modal.js"></script>
+    <script src="components/modal/ModalDialogController.js"></script>
+    <script src="components/modal/ModalInstanceController.js"></script>
+
+    <script src="components/MainController.js"></script>
+</head>
+<body ng-app="appPourFlower">
+<div>
+    <!-- HEADER -->
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+
+</div>
+</body>
+</html>

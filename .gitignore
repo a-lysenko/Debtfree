@@ -1,0 +1,9 @@
+.idea
+*.log
+
+node_modules
+bower_components
+public
+tmp
+dist
+coverage
