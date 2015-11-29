@@ -9,3 +9,4 @@ before_script:
   - bower install
 script:
   - npm run test-single-run
+  - gulp rep
