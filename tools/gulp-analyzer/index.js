@@ -85,7 +85,7 @@ function runKarma(cb) {
   log('running runKarma');
   new karma({
     basePath: process.cwd(),
-    configFile: process.cwd() + '\\node_modules\\' + PLUGIN_NAME + '\\karma.conf.js',
+    configFile: process.cwd() + '/node_modules/' + PLUGIN_NAME + '/karma.conf.js',
     singleRun: true
   }, cb).start();
 }
